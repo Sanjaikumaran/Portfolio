@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+
+<head>
+
+    <link rel="icon" href="/favicon/img9.jpg">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SK</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .segment h1,
+        .segment1 h1 {
+            margin-bottom: 80px;
+        }
+
+        .topdiv {
+            display: inline-flex;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .segment {
+            margin: 0%;
+
+            display: flexbox;
+            color: #f9f9f9;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: rgb(0, 0, 0);
+            padding: 10%;
+
+        }
+
+        .segment1 {
+            display: flexbox;
+            padding: 10%;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            background-color: rgb(255, 255, 255);
+        }
+
+
+        .whole {
+            margin: 0%;
+
+        }
+
+        .head {
+            color: rgb(0, 0, 0);
+            display: block;
+            float: left;
+            margin: 10px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+
+        @media screen and (max-width:500px) {
+            .top {
+                display: inline-block !important;
+                text-align: center;
+            }
+
+            .feedback {
+                display: inline-flex;
+
+            }
+
+            .drop-content li {
+
+                list-style: none;
+                display: inline;
+                padding: 10px;
+            }
+
+            .send {
+                margin-left: 10px;
+                max-width: fit-content;
+            }
+
+
+            .top h1 {
+                margin-top: 3px;
+                margin-bottom: 0;
+            }
+
+            .drop-content {
+                margin-top: 0;
+                margin-bottom: 3px;
+            }
+        }
+
+        @media screen and (min-width:830px) {
+            .drop-content {
+                float: right;
+            }
+
+            .feedback {
+                display: inline-flex;
+
+            }
+
+            .drop-content li {
+                list-style: none;
+                display: inline;
+                padding: 10px;
+            }
+        }
+
+        @media screen and (max-width:740px) {
+            form {
+                display: inline-grid;
+                max-width: fit-content;
+
+            }
+
+            .feedback {
+                display: inline-flex;
+
+            }
+
+            .drop-content li {
+                list-style: none;
+                display: inline;
+                padding: 10px;
+            }
+
+            .send {
+                border-color: #dbaa86;
+                margin-left: 100px;
+                max-width: fit-content;
+            }
+
+
+        }
+
+        @media screen and (max-width:904px) {
+            .feedback {
+                display: inline-flex;
+
+            }
+
+            .top {
+                float: inline-start;
+                text-align: center;
+            }
+
+            .drop-content li {
+                list-style: none;
+                display: inline;
+                padding: 10px;
+            }
+
+            .head {
+                padding-top: 9px;
+            }
+
+            .top h1 {
+                margin-top: 3px;
+                margin-bottom: 0;
+                float: initial;
+            }
+
+            .drop-content {
+                margin-bottom: 5px;
+                margin-top: 0%;
+                list-style: none;
+                float: none;
+            }
+        }
+
+        @media screen and (max-width: 270px) {
+            .top h1 {
+                font-size: x-large;
+                padding-top: 2px;
+
+            }
+
+            .topdiv img {
+                width: 28px;
+                height: 28px
+            }
+
+
+        }
+
+        @media screen and (max-width: 350px) {
+            .feedback {
+                display: inline-grid;
+
+            }
+
+            form {
+                display: inline-grid;
+                max-width: fit-content;
+
+            }
+
+            .segment h1,
+            .segment1 h1 {
+                margin-bottom: 20px;
+            }
+
+            .top {
+                display: inline-block !important;
+                text-align: center;
+            }
+
+            .segment,
+            .segment1 {
+                padding: 2%;
+                max-width: 100%;
+            }
+
+            .drop-content li {
+                list-style: none;
+                display: inline;
+                padding: 5px;
+            }
+
+            .topdiv img {
+                width: 28px;
+                height: 28px
+            }
+
+            .top h1 {
+                padding-top: 5px;
+                margin-left: 1px;
+                font-size: 25px;
+                margin-top: 0%;
+                margin-bottom: 0%;
+                float: initial;
+            }
+
+            .drop-content {
+                margin-top: 0;
+                margin-bottom: 3px;
+            }
+
+            .send {
+                margin-left: 75px;
+            }
+        }
+
+
+
+        .head:hover {
+            cursor: default;
+            color: rgba(185, 102, 102, 0.993);
+        }
+
+        .drop-content {
+            padding: 0;
+        }
+
+
+
+        a:link,
+        a:visited {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+
+        a:hover {
+            color: #7c5e49;
+        }
+
+        .send {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: #dee1e6;
+            color: black;
+            border-color: #030303;
+            border-radius: 5px;
+            border: 2px solid;
+            font-size: 15px;
+        }
+
+        .send:hover {
+            color: #7c5e49;
+        }
+
+        .handles a {
+            padding-top: 5px;
+            padding-left: 2px;
+        }
+
+        .handles p {
+            padding-right: 10px;
+            display: inline-flex;
+        }
+
+        .handles img {
+            border-radius: 10px;
+            height: 30px;
+        }
+
+        input:hover {
+
+            cursor: pointer;
+            color: #000000;
+        }
+
+        .drop-content a:target {
+            color: #7c5e49;
+        }
+
+        .top {
+            position: fixed;
+            top: 0;
+            justify-content: space-between;
+            width: 100%;
+        }
+    </style>
+    <script>
+        function load() {
+            document.getElementById('divFirst').style.height = document.querySelector('.top').offsetHeight + 'px';
+        }
+        window.onresize = function () {
+            load()
+        }
+    </script>
+
+
+
+<body class="whole" onload="load()">
+
+    <div class="top">
+        <div class="topdiv">
+
+            <img src="\favicon\img6.jpg" alt="SKimg" height="50px" style="padding-top: 4px; padding-left: 5px;">
+            <h1 class="head">SANJAIKUMARAN</h1>
+        </div>
+        <ul class="drop-content">
+
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#interest">Interest</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#handles">Handles</a></li>
+        </ul>
+    </div>
+    <script>
+        var top1 = document.getElementsByClassName('top')[0];
+        top1.style.backgroundColor = 'white';
+
+        // trigger this function every time the user scrolls
+        window.onscroll = function (event) {
+            var scroll = window.pageYOffset;
+            if (scroll > 30) {
+                top1.style.backgroundColor = '#dee1e6';
+                top1.style.transitionDuration = "0.5s"
+            } else {
+                top1.style.backgroundColor = 'white';
+            }
+        }
+    </script>
+    <hr id="home">
+
+
+    <div id="divFirst">
+        <div>
+            <section class="segment1">
+                <h1> Sanjaikumaran</h1>
+                <p>A ordinary person with some extra knowlede and humanity</p>
+            </section>
+            <hr id="about" color="white">
+
+            <section class="segment">
+                <h1>About</h1>
+                <p>An innocent boy with very kind heart who is studying engineering in a very worst college with
+                    very worst
+                    human beings.</p>
+                <p>A passionate sleeper.(actually passionate ku kuda spelling theriyadhu.)</p>
+
+            </section>
+            <hr id="interest" color="white">
+
+            <section class="segment1">
+                <h1>Interest</h1>
+                <p>I'm very much interested in tech world like developing,
+                    networking,
+                    database,
+                    programming,
+                    problem solving, problem creating and so on.</p>
+                <p>Aana ena pandradhu soberi kazhudha, edhaachu vela seinum na kastam.
+                    Padikkavum kastama irukku. Ellam pannanum nu aasaya irundhalum onnum theriyaadhe!. </p>
+            </section>
+            <hr id="skills" color="white">
+            <section style="padding: 5% 10%;" class="segment">
+                <h1>Skills</h1>
+                <p>Python-40%</p>
+                <p>C-30%</p>
+                <p>Java-10%</p>
+                <p>HTML-10%</p>
+                <p>CSS-loading... </p>
+                <p>JavaScript-loading... </p>
+                <p>Cyber Security-Kaanal neer!</p>
+
+                <hr id="projects" color="black">
+            </section>
+
+            <section class="segment1">
+                <h1>Projects</h1>
+                <p>I have worked in a state level Hackthon which was conducted by our relative college "Sathiyabama
+                    university".
+                    We done the project very worst because of the one psycho path, he gave a worst plan ever.
+                    Eventhough i'm a participant, I won't selcet this kind of project. </p>
+                <hr id="resume" color="white">
+
+            </section>
+
+            <section style="padding: 8% 10%" class="segment">
+                <h1>Resume</h1>
+                <p>Resume is being prepared</p>
+                <p>Please wait until it is ready</p>
+                <p>Actually i don't know, how to prepare a Resume</p>
+                <hr id="handles" color="black">
+
+            </section>
+
+            <section class="segment1">
+
+
+                <div class="handles">
+
+                    <h2>Social Media Handles</h2>
+                    <p><img src="handles icons\git.png" alt="fb"><a href="https://github.com/Sanjaikumaran"
+                            target="_blank">GitHub</a></p>
+                    <p><img src="handles icons\facebook.jpg" alt="fb"><a
+                            href="https://www.facebook.com/sanjai.kumaran.18" target="_blank">FaceBook</a>
+                    </p>
+                    <p><img src="handles icons\insta.jpg" alt="fb"><a href="https://www.instagram.com/sk_03_11"
+                            target="_blank">Instagram</a></p>
+                    <p><img src="handles icons\twitter.jpg" alt="fb"><a href="http://twitter.com/@Sanjai_0311"
+                            target="_blank">Twitter</a></p>
+                    <p><img src="handles icons\whatsapp.jpg" alt="fb"><a href="https://wa.me/8531844300"
+                            target="_blank">WhatsApp</a>
+                    </p>
+                    <p><img src="handles icons\telegram.jpg" alt="fb"><a href="https://t.me/SANJAIKUMARAN"
+                            target="_blank">Telegram</a>
+                    </p>
+                    <p><img src="handles icons\spotify.jpg " alt="fb"><a
+                            href="https://open.spotify.com/user/314k4q73fzeofnga4miurdsjfwyi?si=fMWiaPsFSySVwlkK_MryiQ&utm_source=copy-link"
+                            target="_blank">Spotify</a></p>
+
+                </div>
+            </section>
+            <section style="padding:5% 10%" class="segment">
+                <h1>Feedback</h1>
+                <div class=" ip">
+
+                    <form action="mailto:sanjaikumaran0311@gmail.com" method="post" enctype="text/plain">
+
+                        <div><label for="name">Your name:</label><input placeholder="Your name" id="name" name="name"
+                                type="text"></div>
+                        <br>
+                        <div><label for="mail">Email &nbsp&nbsp :</label><input placeholder="Email address" id="mail"
+                                name="mail" type="email"></div><br>
+                        <div class="feedback">
+                            <label for="feedback">Feedback :</label><textarea placeholder="Write Your Feedback"
+                                id="feedback" name="feedback" cols="21"></textarea>
+                        </div><br><br>
+                        <input class="send" type="submit" value="send">
+                    </form>
+
+                </div>
+            </section>
+            <footer>
+
+
+            </footer>
+</body>
+</head>

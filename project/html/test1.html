@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" />
+    <style>
+        .option {
+            color: red;
+            margin: 10px auto;
+        }
+
+        .option.active {
+            color: blue;
+        }
+    </style>
+    <script>
+        function my() {
+            document.getElementByClassName("option").click(function (event) {
+                this.classList.add("active").siblings().classList.remove("active");
+            });
+        }
+    </script>
+
+<body>
+    <div onclick="my()" class="option first">1</div>
+    <div class="option second">4</div>
+    <div class="option third">3</div>
+    <div class="option fourth">4</div>
+
+    <button id="btn" onclick="myfun()"> hi</button>
+</body>
+</head>
