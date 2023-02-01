@@ -1,0 +1,615 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.whole {
+    margin: 0%;
+}
+
+.top {
+    position: fixed;
+    top: 0;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.topdiv {
+    display: inline-flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.head {
+    color: rgb(0, 0, 0);
+    display: block;
+    float: left;
+    margin: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.head:hover {
+    cursor: default;
+    color: #7c5e49;
+}
+
+.drop-content {
+    padding: 0;
+}
+
+.drop-content hr {
+    margin: 0;
+}
+
+.drop-content a:target {
+    color: #7c5e49;
+}
+
+#divFirst hr {
+    width: 50px
+}
+
+#divFirst h1 {
+    margin-bottom: 10px;
+}
+
+a:link,
+a:visited {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+a:hover {
+    color: #7c5e49;
+}
+
+.segment {
+    display: flexbox;
+    color: #f9f9f9;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(0, 0, 0);
+    padding: 10%;
+}
+
+.segment1 {
+    display: flexbox;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f9f9f9;
+    padding: 10%;
+}
+
+.handles a {
+    font-size:large;
+    padding-top: 5px;
+    padding-left: 2px;
+}
+
+.handles p {
+    padding-right: 10px;
+    display: inline-flex;
+}
+
+.handles img {
+    border-radius: 10px;
+    height: 30px;
+}
+
+.feedback {
+    display: inline-flex;
+}
+
+.send {
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #dee1e6;
+    color: black;
+    margin-left: 90px;
+    padding: 10px 75px;
+    border-radius: 15px;
+    font-size: 15px;
+}
+
+input,
+textarea {
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.send:hover {
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #dee1e6;
+    color: #7c5e49;
+    padding: 10px 75px;
+    border-radius: 15px;
+    font-size: 15px;
+}
+
+input:hover,
+textarea:hover {
+    transition: none;
+    border-radius: 5px;
+    border-color: #ffffff;
+    background-color: #dee1e6;
+}
+
+@media (min-width:924px) {
+    .topdiv {
+        display: inline;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .drop-content hr {
+        display: none;
+    }
+
+    .dropbtn {
+        display: none;
+    }
+
+    .top {
+        float: inline-start;
+        text-align: center;
+    }
+
+    .drop-content li {
+        list-style: none;
+        display: inline;
+        padding: 10px;
+    }
+
+    .top h1 {
+        float: left;
+    }
+
+    .drop-content {
+        list-style: none;
+        float: right;
+    }
+}
+
+@media (min-width:830px)and (max-width:923px) {
+    .drop-content {
+        float: right;
+    }
+
+    .drop-content {
+        float: right;
+        padding-top: 10px;
+        margin-top: 0;
+        margin-bottom: 3px;
+    }
+
+    .dropbtn {
+        display: none;
+    }
+
+    .feedback {
+        display: inline-flex;
+    }
+
+    .drop-content hr {
+        display: none;
+    }
+
+    .drop-content li {
+        list-style: none;
+        display: inline;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:829px) {
+    .dropbtn {
+        display: none;
+    }
+
+    .drop-content hr {
+        display: none;
+    }
+
+    .drop-content {
+        padding-top: 7px;
+        float: right;
+        margin-top: 0;
+        margin-bottom: 3px;
+    }
+
+    .form {
+        display: inline-grid;
+        max-width: fit-content;
+    }
+
+    .feedback {
+        display: inline-flex;
+    }
+
+    .drop-content li {
+        list-style: none;
+        display: inline;
+        padding: 10px;
+    }
+
+    .send {
+        margin-left: 80px;
+        max-width: fit-content;
+    }
+}
+
+@media screen and (max-width:739px) {
+
+    .segment,
+    .segment1,
+    .segment a,
+    .segment1 a {
+        font-size: large;
+    }
+
+    .drop-content a {
+        font-size: 18px;
+    }
+
+    .top {
+        display: inline-block !important;
+        text-align: center;
+    }
+
+    .feedback {
+        display: inline-flex;
+    }
+
+    .drop-content li {
+        list-style: none;
+        display: inline;
+        padding: 5.5px;
+    }
+
+    .send {
+        margin-left: 10px;
+        max-width: fit-content;
+    }
+
+    .drop-content {
+        padding-top: 10px;
+        float: left;
+        margin-top: 0;
+        margin-bottom: 3px;
+    }
+}
+
+@media screen and (max-width:563px) {
+    form {
+        display: inline-grid;
+        max-width: fit-content;
+    }
+
+    .drop-content hr {
+        display: block;
+    }
+
+    .send {
+        max-width: fit-content;
+    }
+
+    .segment,
+    .segment1,
+    .segment a,
+    .segment1 a {
+        font-size: medium;
+    }
+
+    .feedback {
+        display: inline-flex;
+    }
+
+    .topdiv div {
+        float: right;
+    }
+
+    .topdiv {
+        display: inline-block;
+    }
+
+    .head {
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
+    .dropbtn {
+        display: inline;
+        background-color: rgb(222, 225, 230);
+        margin-left: 2px;
+        margin-top: 10px;
+        color: rgb(0, 0, 0);
+        width: 80px;
+        height: 35px;
+        font-size: 16px;
+        cursor: pointer;
+        border-color: black;
+        border: 2px solid;
+    }
+
+    .drop {
+        float: left;
+        position: relative;
+        display: block;
+    }
+
+    .drop-content {
+        padding: 3px 1px;
+        list-style: none;
+        display: none;
+        position: fixed;
+        background-color: #f9f9f9;
+        z-index: 1;
+        margin: 0;
+    }
+
+    .drop ul {
+        width: 85px;
+        text-decoration: none;
+    }
+
+    .drop-content li {
+        display: block;
+        padding: 0 3px;
+    }
+
+    .drop-content li:hover {
+        background-color: white;
+    }
+
+    .drop:hover .drop-content {
+        background-color: rgb(222, 225, 230);
+        display: block;
+    }
+
+    .drop:hover .dropbtn {
+        border-color: #7c5e49;
+        border: 2px solid;
+        transition: 0.8s;
+        color: #7c5e49;
+    }
+
+    a:link,
+    a:visited {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .drop-content a:hover {
+        color: #7c5e49;
+    }
+
+    .dropbtn span {
+        font-size: 20px;
+    }
+
+    .top {
+        background-color: white;
+        position: fixed;
+    }
+
+    .send {
+        margin-left: 100px;
+        padding: 10px 75px;
+    }
+}
+
+@media screen and (max-width:354px) {
+    .topdiv img {
+        width: 28px;
+        height: 28px
+    }
+
+    .segment,
+    .segment1.segment a,
+    .segment1 a {
+        font-size: 15px;
+    }
+
+    .drop:hover .dropbtn {
+        border-color: #7c5e49;
+        border: 2px solid;
+        transition: 0.8s;
+        color: #7c5e49;
+        background-color: rgb(0, 0, 0);
+    }
+
+    .drop-content li {
+        padding: 0 3px;
+    }
+
+    .topdiv div {
+        float: right;
+    }
+
+    .topdiv {
+        display: inline-block;
+    }
+
+    .head {
+        font-size: 21px;
+    }
+
+    .dropbtn {
+        background-color: #ffffff;
+        margin-top: 9px;
+        color: rgb(0, 0, 0);
+        width: 65px;
+        height: 30px;
+        font-size: 13px;
+        cursor: pointer;
+        border-color: black;
+        border: 2px solid;
+    }
+
+    .drop {
+        float: left;
+        position: relative;
+        display: block;
+    }
+
+    .drop-content {
+        list-style: none;
+        display: none;
+        position: fixed;
+        background-color: #f9f9f9;
+        z-index: 1;
+        margin: 0;
+    }
+
+    .drop ul {
+        width: 80px;
+        text-decoration: none;
+    }
+
+    .drop-content li {
+        padding-left: 5px;
+    }
+
+    .drop-content li:hover {
+        background-color: white;
+    }
+
+    .drop:hover .drop-content {
+        background-color: rgb(222, 225, 230);
+        display: block;
+    }
+
+    .drop:hover .dropbtn {
+        border-color: white;
+        border: 2px solid;
+        transition: 0.8s;
+        color: rgb(0, 0, 0);
+        background-color: rgb(148, 148, 148);
+    }
+
+    .drop-content a:link,
+    .drop-content a:visited {
+        font-size: 15px;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .drop-content a:hover {
+        color: #7c5e49;
+    }
+
+    .dropbtn span {
+        font-size: 15px;
+    }
+
+    .top {
+        background-color: white;
+        position: fixed;
+    }
+
+    .send {
+        margin-left: 100px;
+        padding: 10px 50px;
+    }
+}
+
+@media screen and (max-width:265px) {
+    .topdiv img {
+        width: 28px;
+        height: 28px
+    }
+
+    .segment,
+    .segment1.segment a,
+    .segment1 a {
+        font-size: 12px;
+    }
+
+    .topdiv div {
+        float: right;
+    }
+
+    .topdiv {
+        display: inline-block;
+    }
+
+    .head {
+        font-size: 20px;
+    }
+
+    .handles p {
+        margin: 3px;
+    }
+
+    .handles a {
+        padding: 10px;
+    }
+
+    .dropbtn {
+        background-color: #ffffff;
+        margin-top: 8px;
+        color: rgb(0, 0, 0);
+        width: 65px;
+        height: 30px;
+        font-size: 13px;
+        cursor: pointer;
+        border-color: black;
+        border: 2px solid;
+    }
+
+    .drop {
+        float: left;
+        position: relative;
+        display: block;
+    }
+
+    .drop-content li {
+        padding: 0 3px;
+    }
+
+    .drop-content {
+        list-style: none;
+        display: none;
+        position: fixed;
+        background-color: #f9f9f9;
+        z-index: 1;
+        margin: 0;
+    }
+
+    .drop-content li:hover {
+        background-color: white;
+    }
+
+    .drop:hover .drop-content {
+        background-color: rgb(222, 225, 230);
+        display: block;
+    }
+
+    .drop:hover .dropbtn {
+        border-color: #7c5e49;
+        border: 2px solid;
+        transition: 0.8s;
+        color: #7c5e49;
+        background-color: rgb(0, 0, 0);
+    }
+
+    .drop-content a:link,
+    .drop-content a:visited {
+        font-size: 15px;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .drop-content a:hover {
+        color: #7c5e49;
+    }
+
+    .top {
+        background-color: white;
+        position: fixed;
+    }
+}

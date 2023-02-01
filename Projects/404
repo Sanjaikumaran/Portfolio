@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="handles icons\img9.jpg">
+    <link rel="stylesheet" href="Error\error.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 error</title>
+</head>
+<script src="Error\error.js"></script>
+
+<body>
+    <div class="error">
+        <h1 title="Click Me!" onclick="cng()">42<div id="emoji">😎</div>
+        </h1>
+        <p title="Required page isn't available">Neenga theduradhu inga illeenga<br>Ena irukko adha paathutu ponga.</p>
+    </div>
+</body>
+
+</html>
